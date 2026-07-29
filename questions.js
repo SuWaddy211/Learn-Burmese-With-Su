@@ -1,32 +1,79 @@
 const course = {
 
-    // ==================================================
-    // LESSON 1 — GREETINGS
-    // ==================================================
-
     1: {
         title: "Greetings",
 
+        icon: "👋",
+
         unit: 1,
+
+        unitTitle: "Getting Started",
+
+        unitDescription:
+            "Essential vocabulary for meeting people and beginning simple conversations.",
+
         level: "Beginner",
-        estimatedTime: "6 minutes",
-        xp: 50,
+
+        estimatedTime: "5–7 minutes",
+
+        xp: 80,
+
+        description:
+            "Review basic greetings and polite expressions used in everyday Burmese conversations.",
 
         objectives: [
-            "Greet someone politely",
-            "Respond to a greeting",
-            "Thank someone",
-            "Say goodbye",
-            "Recognize a basic self-introduction"
+            "Recognise common Burmese greetings",
+            "Respond appropriately when someone greets you",
+            "Say thank you and goodbye",
+            "Learn useful expressions for asking how someone is"
+        ],
+
+        coreVocabulary: [
+            {
+                burmese: "Mingalaba",
+                english: "Hello"
+            },
+            {
+                burmese: "Chezu tin ba de",
+                english: "Thank you"
+            },
+            {
+                burmese: "Ta ta",
+                english: "Goodbye / Bye"
+            },
+            {
+                burmese: "Nay kaung lar?",
+                english: "How are you?"
+            },
+            {
+                burmese: "Kaung ba de",
+                english: "I am fine"
+            }
+        ],
+
+        bonusVocabulary: [
+            {
+                burmese: "Hoat kaဲ့",
+                english: "Yes"
+            },
+            {
+                burmese: "Ma hoat bu",
+                english: "No"
+            },
+            {
+                burmese: "Twe ya da wan thar ba de",
+                english: "Nice to meet you"
+            }
         ],
 
         questions: [
 
             {
-                type: "vocabulary",
+                type: "meaning",
                 difficulty: "easy",
 
-                question: "What does “Mingalaba” mean?",
+                question:
+                    "What does “Mingalaba” mean?",
 
                 choices: [
                     "Hello",
@@ -38,182 +85,472 @@ const course = {
                 answer: 0,
 
                 explanation:
-                    "“Mingalaba” is a common Burmese greeting meaning “Hello.”"
-            },
-
-            {
-                type: "scenario",
-                difficulty: "easy",
-
-                question:
-                    "You meet a new colleague for the first time. What should you say?",
-
-                choices: [
-                    "Mingalaba",
-                    "Ta Ta",
-                    "Chezu Tin Ba De",
-                    "Sar Ba"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "Use “Mingalaba” when greeting someone."
-            },
-
-            {
-                type: "conversation",
-                difficulty: "easy",
-
-                question:
-                    "A colleague says, “Mingalaba.” What is the most natural response?",
-
-                choices: [
-                    "Mingalaba",
-                    "Ta Ta",
-                    "Sar Ba",
-                    "Kaung Ba De"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "You can respond to “Mingalaba” by greeting the person back with “Mingalaba.”"
+                    "“Mingalaba” is a polite and widely used Burmese greeting meaning “Hello.”"
             },
 
             {
                 type: "translation",
                 difficulty: "easy",
 
-                question: "Which phrase means “Thank you”?",
+                question:
+                    "How do you say “Thank you” in Burmese?",
 
                 choices: [
-                    "Ta Ta",
-                    "Chezu Tin Ba De",
-                    "Mingalaba",
-                    "Kaung Ba De"
+                    "Kaung ba de",
+                    "Chezu tin ba de",
+                    "Ta ta",
+                    "Ma hoat bu"
                 ],
 
                 answer: 1,
 
                 explanation:
-                    "“Chezu Tin Ba De” means “Thank you.”"
+                    "“Chezu tin ba de” means “Thank you.”"
             },
 
             {
-                type: "scenario",
+                type: "meaning",
+                difficulty: "easy",
+
+                question:
+                    "What does “Nay kaung lar?” mean?",
+
+                choices: [
+                    "Where are you going?",
+                    "What is your name?",
+                    "How are you?",
+                    "Are you busy?"
+                ],
+
+                answer: 2,
+
+                explanation:
+                    "“Nay kaung lar?” is used to ask, “How are you?”"
+            },
+
+            {
+                type: "response",
+                difficulty: "easy",
+
+                question:
+                    "Someone asks, “Nay kaung lar?” Which response means “I am fine”?",
+
+                choices: [
+                    "Kaung ba de",
+                    "Ta ta",
+                    "Ma hoat bu",
+                    "Chezu tin ba de"
+                ],
+
+                answer: 0,
+
+                explanation:
+                    "“Kaung ba de” means “I am fine” or “I am well.”"
+            },
+
+            {
+                type: "fill-the-blank",
                 difficulty: "medium",
 
                 question:
-                    "A stranger gives you helpful directions. What should you say?",
+                    "Complete the conversation: A: Mingalaba. B: ________.",
 
                 choices: [
-                    "Chezu Tin Ba De",
-                    "Ta Ta",
                     "Mingalaba",
-                    "Sar Ba"
+                    "Ta ta",
+                    "Ma hoat bu",
+                    "Kaung ba de"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "“Chezu Tin Ba De” is the appropriate expression when thanking someone for their help."
+                    "The natural response to “Mingalaba” is to greet the person back with “Mingalaba.”"
             },
 
             {
-                type: "scenario",
+                type: "usage",
                 difficulty: "medium",
 
                 question:
-                    "You are leaving a friend’s home after a visit. Which expression is appropriate?",
+                    "Which expression would you normally use when leaving?",
 
                 choices: [
-                    "Ta Ta",
-                    "Mingalaba",
-                    "Chezu Tin Ba De",
-                    "Kaung Ba De"
+                    "Nay kaung lar?",
+                    "Kaung ba de",
+                    "Ta ta",
+                    "Mingalaba"
                 ],
 
-                answer: 0,
+                answer: 2,
 
                 explanation:
-                    "“Ta Ta” is commonly used to say goodbye."
+                    "“Ta ta” is an informal way of saying “Goodbye” or “Bye.”"
             },
 
             {
-                type: "recognition",
+                type: "bonus-word",
                 difficulty: "medium",
 
-                question: "Which sentence introduces a person named Su?",
+                question:
+                    "What does the bonus phrase “Twe ya da wan thar ba de” mean?",
 
                 choices: [
-                    "Kyun-daw na-me Su ba.",
-                    "Mingalaba.",
-                    "Ta Ta.",
-                    "Chezu Tin Ba De."
+                    "Please sit down",
+                    "Nice to meet you",
+                    "See you tomorrow",
+                    "Thank you very much"
                 ],
 
-                answer: 0,
+                answer: 1,
 
                 explanation:
-                    "“Kyun-daw na-me Su ba” means “My name is Su.”"
+                    "“Twe ya da wan thar ba de” means “Nice to meet you.”"
             },
 
             {
-                type: "challenge",
+                type: "review",
                 difficulty: "hard",
 
                 question:
-                    "You arrive at a hotel. The receptionist says, “Mingalaba.” What is the best reply?",
+                    "Which conversation is correct?",
 
                 choices: [
-                    "Mingalaba",
-                    "Ta Ta",
-                    "Chezu Tin Ba De",
-                    "Sar Ba"
+                    "A: Nay kaung lar? B: Kaung ba de.",
+                    "A: Ta ta. B: Chezu tin ba de.",
+                    "A: Kaung ba de. B: Nay kaung lar?",
+                    "A: Ma hoat bu. B: Mingalaba."
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "The most natural reply to a greeting is to greet the receptionist back with “Mingalaba.”"
+                    "“Nay kaung lar?” asks “How are you?” and “Kaung ba de” answers “I am fine.”"
             }
 
         ]
     },
 
 
-    // ==================================================
-    // LESSON 2 — FAMILY MEMBERS
-    // ==================================================
-
     2: {
-        title: "Family Members",
+        title: "Introducing Yourself",
+
+        icon: "🙋",
 
         unit: 1,
+
+        unitTitle: "Getting Started",
+
+        unitDescription:
+            "Essential vocabulary for meeting people and beginning simple conversations.",
+
         level: "Beginner",
-        estimatedTime: "6 minutes",
-        xp: 60,
+
+        estimatedTime: "6–8 minutes",
+
+        xp: 90,
+
+        description:
+            "Practise saying your name, asking another person's name and sharing basic personal information.",
 
         objectives: [
-            "Recognize words for close family members",
-            "Identify mother and father",
-            "Identify grandmother and grandfather",
-            "Use family vocabulary in introductions"
+            "Say your name",
+            "Ask another person's name",
+            "Use polite first-person expressions",
+            "Recognise simple introduction vocabulary"
+        ],
+
+        coreVocabulary: [
+            {
+                burmese: "Na-me",
+                english: "Name"
+            },
+            {
+                burmese: "Kyun-ma",
+                english: "I / me — female speaker"
+            },
+            {
+                burmese: "Kyun-daw",
+                english: "I / me — male speaker"
+            },
+            {
+                burmese: "Ba le?",
+                english: "What?"
+            },
+            {
+                burmese: "Kyun-ma na-me Su ba",
+                english: "My name is Su — female speaker"
+            }
+        ],
+
+        bonusVocabulary: [
+            {
+                burmese: "Beh ga le?",
+                english: "Where are you from?"
+            },
+            {
+                burmese: "Myanmar ga ba",
+                english: "I am from Myanmar"
+            },
+            {
+                burmese: "A-lote",
+                english: "Work / job"
+            }
         ],
 
         questions: [
 
             {
-                type: "vocabulary",
+                type: "meaning",
                 difficulty: "easy",
 
-                question: "What does “A-may” mean?",
+                question:
+                    "What does “Na-me” mean?",
+
+                choices: [
+                    "Country",
+                    "Name",
+                    "Job",
+                    "Family"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "“Na-me” means “Name.”"
+            },
+
+            {
+                type: "pronoun",
+                difficulty: "easy",
+
+                question:
+                    "Which word can a female speaker use for “I”?",
+
+                choices: [
+                    "Kyun-ma",
+                    "Kyun-daw",
+                    "Thu",
+                    "Min"
+                ],
+
+                answer: 0,
+
+                explanation:
+                    "A female speaker commonly uses “Kyun-ma” for “I.”"
+            },
+
+            {
+                type: "pronoun",
+                difficulty: "easy",
+
+                question:
+                    "Which word can a male speaker use for “I”?",
+
+                choices: [
+                    "Kyun-ma",
+                    "Kyun-daw",
+                    "Thu-ma",
+                    "Na-me"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "A male speaker commonly uses “Kyun-daw” for “I.”"
+            },
+
+            {
+                type: "translation",
+                difficulty: "medium",
+
+                question:
+                    "What does “Kyun-ma na-me Su ba” mean?",
+
+                choices: [
+                    "I am from Myanmar",
+                    "My name is Su",
+                    "Su is my friend",
+                    "I work with Su"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "“Kyun-ma na-me Su ba” means “My name is Su,” spoken by a female speaker."
+            },
+
+            {
+                type: "fill-the-blank",
+                difficulty: "medium",
+
+                question:
+                    "Complete the sentence: Kyun-ma ______ Su ba.",
+
+                choices: [
+                    "a-lote",
+                    "na-me",
+                    "beh ga",
+                    "kaung"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "“Na-me” means “Name,” so the sentence means “My name is Su.”"
+            },
+
+            {
+                type: "bonus-word",
+                difficulty: "medium",
+
+                question:
+                    "What does “Beh ga le?” ask?",
+
+                choices: [
+                    "What is your name?",
+                    "Where are you from?",
+                    "Where do you work?",
+                    "How are you?"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "“Beh ga le?” asks where someone is from."
+            },
+
+            {
+                type: "response",
+                difficulty: "medium",
+
+                question:
+                    "Which response means “I am from Myanmar”?",
+
+                choices: [
+                    "Myanmar ga ba",
+                    "Kaung ba de",
+                    "Chezu tin ba de",
+                    "Na-me ba le?"
+                ],
+
+                answer: 0,
+
+                explanation:
+                    "“Myanmar ga ba” means “I am from Myanmar.”"
+            },
+
+            {
+                type: "review",
+                difficulty: "hard",
+
+                question:
+                    "Which sequence is most suitable when meeting someone for the first time?",
+
+                choices: [
+                    "Greeting → name → where you are from",
+                    "Goodbye → thank you → greeting",
+                    "Job → goodbye → name",
+                    "No → greeting → goodbye"
+                ],
+
+                answer: 0,
+
+                explanation:
+                    "A basic introduction can begin with a greeting, followed by your name and where you are from."
+            }
+
+        ]
+    },
+
+
+    3: {
+        title: "Family Members",
+
+        icon: "👨‍👩‍👧",
+
+        unit: 1,
+
+        unitTitle: "Getting Started",
+
+        unitDescription:
+            "Essential vocabulary for meeting people and beginning simple conversations.",
+
+        level: "Beginner",
+
+        estimatedTime: "6–8 minutes",
+
+        xp: 90,
+
+        description:
+            "Review common words for immediate and extended family members.",
+
+        objectives: [
+            "Recognise close family vocabulary",
+            "Identify parents and grandparents",
+            "Distinguish male and female family terms",
+            "Use family words in simple descriptions"
+        ],
+
+        coreVocabulary: [
+            {
+                burmese: "A-may",
+                english: "Mother"
+            },
+            {
+                burmese: "A-phay",
+                english: "Father"
+            },
+            {
+                burmese: "A-hpwa",
+                english: "Grandmother"
+            },
+            {
+                burmese: "A-hpo",
+                english: "Grandfather"
+            },
+            {
+                burmese: "Tha-mi",
+                english: "Daughter"
+            },
+            {
+                burmese: "Tha",
+                english: "Son"
+            }
+        ],
+
+        bonusVocabulary: [
+            {
+                burmese: "A-ko",
+                english: "Older brother"
+            },
+            {
+                burmese: "Ma-ma",
+                english: "Older sister"
+            },
+            {
+                burmese: "Nyi-ma",
+                english: "Younger sister"
+            },
+            {
+                burmese: "Maung-lay",
+                english: "Younger brother"
+            }
+        ],
+
+        questions: [
+
+            {
+                type: "meaning",
+                difficulty: "easy",
+
+                question:
+                    "What does “A-may” mean?",
 
                 choices: [
                     "Mother",
                     "Father",
-                    "Grandfather",
+                    "Grandmother",
                     "Daughter"
                 ],
 
@@ -224,35 +561,37 @@ const course = {
             },
 
             {
-                type: "vocabulary",
+                type: "meaning",
                 difficulty: "easy",
 
-                question: "What does “A-phay” mean?",
+                question:
+                    "What does “A-phay” mean?",
 
                 choices: [
-                    "Father",
-                    "Mother",
+                    "Grandfather",
                     "Brother",
-                    "Uncle"
+                    "Father",
+                    "Son"
                 ],
 
-                answer: 0,
+                answer: 2,
 
                 explanation:
                     "“A-phay” means “Father.”"
             },
 
             {
-                type: "vocabulary",
+                type: "translation",
                 difficulty: "easy",
 
-                question: "Which word means “Grandmother”?",
+                question:
+                    "Which Burmese word means “Grandmother”?",
 
                 choices: [
                     "A-hpo",
                     "A-hpwa",
-                    "A-daw",
-                    "Tha"
+                    "A-may",
+                    "Tha-mi"
                 ],
 
                 answer: 1,
@@ -262,462 +601,335 @@ const course = {
             },
 
             {
-                type: "recognition",
-                difficulty: "medium",
+                type: "translation",
+                difficulty: "easy",
 
-                question: "Which word refers to a grandfather?",
+                question:
+                    "Which Burmese word means “Grandfather”?",
 
                 choices: [
                     "A-hpo",
                     "A-hpwa",
-                    "A-may",
-                    "Tha-mi"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "“A-hpo” refers to a grandfather."
-            },
-
-            {
-                type: "scenario",
-                difficulty: "medium",
-
-                question:
-                    "You are introducing your mother to a Burmese-speaking friend. Which family word do you need?",
-
-                choices: [
-                    "A-may",
                     "A-phay",
-                    "A-hpo",
-                    "A-hpwa"
+                    "Tha"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "Use “A-may” when referring to your mother."
-            },
-
-            {
-                type: "scenario",
-                difficulty: "medium",
-
-                question:
-                    "You are speaking about your father. Which word is appropriate?",
-
-                choices: [
-                    "A-phay",
-                    "A-may",
-                    "A-hpwa",
-                    "Tha-mi"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "“A-phay” means “Father.”"
+                    "“A-hpo” means “Grandfather.”"
             },
 
             {
                 type: "comparison",
                 difficulty: "medium",
 
-                question: "Which pair is correct?",
+                question:
+                    "Which pair is correct?",
 
                 choices: [
-                    "A-may = Mother",
-                    "A-may = Father",
-                    "A-may = Grandmother",
-                    "A-may = Daughter"
+                    "Tha-mi = Daughter",
+                    "Tha-mi = Son",
+                    "Tha-mi = Mother",
+                    "Tha-mi = Sister"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "The correct pair is “A-may = Mother.”"
+                    "“Tha-mi” means “Daughter.”"
             },
 
             {
-                type: "challenge",
-                difficulty: "hard",
+                type: "bonus-word",
+                difficulty: "medium",
 
                 question:
-                    "At a family gathering, someone introduces an older woman as “A-hpwa.” Who is she?",
+                    "What does the bonus word “A-ko” mean?",
 
                 choices: [
-                    "Grandmother",
-                    "Mother",
-                    "Daughter",
-                    "Sister"
+                    "Older brother",
+                    "Younger brother",
+                    "Older sister",
+                    "Father"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "“A-hpwa” means “Grandmother.”"
+                    "“A-ko” refers to an older brother."
+            },
+
+            {
+                type: "bonus-word",
+                difficulty: "medium",
+
+                question:
+                    "Which bonus word refers to an older sister?",
+
+                choices: [
+                    "A-ko",
+                    "Ma-ma",
+                    "Maung-lay",
+                    "A-hpwa"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "“Ma-ma” is used for an older sister."
+            },
+
+            {
+                type: "review",
+                difficulty: "hard",
+
+                question:
+                    "Which list contains only family members from an older generation?",
+
+                choices: [
+                    "A-may, A-phay, A-hpwa, A-hpo",
+                    "Tha, Tha-mi, Maung-lay, Nyi-ma",
+                    "A-ko, Tha, Tha-mi, Maung-lay",
+                    "Nyi-ma, Ma-ma, Tha, A-ko"
+                ],
+
+                answer: 0,
+
+                explanation:
+                    "Mother, father, grandmother and grandfather are all members of an older generation."
             }
 
         ]
     },
 
 
-    // ==================================================
-    // LESSON 3 — ACTIONS
-    // ==================================================
+    4: {
+        title: "Everyday Actions",
 
-    3: {
-        title: "Actions",
+        icon: "🏃",
 
-        unit: 1,
+        unit: 2,
+
+        unitTitle: "Everyday Burmese",
+
+        unitDescription:
+            "Useful words and sentence patterns for daily activities and common situations.",
+
         level: "Beginner",
-        estimatedTime: "6 minutes",
-        xp: 70,
+
+        estimatedTime: "6–8 minutes",
+
+        xp: 100,
+
+        description:
+            "Review common verbs used to describe everyday activities.",
 
         objectives: [
-            "Recognize common actions",
-            "Identify eating, running, and cooking",
-            "Connect actions to everyday situations",
-            "Distinguish between similar action phrases"
+            "Recognise common daily actions",
+            "Connect verbs with everyday situations",
+            "Distinguish between eating, cooking and drinking",
+            "Learn additional useful action vocabulary"
+        ],
+
+        coreVocabulary: [
+            {
+                burmese: "Sar ne de",
+                english: "Eating"
+            },
+            {
+                burmese: "Chat ne de",
+                english: "Cooking"
+            },
+            {
+                burmese: "Pyae ne de",
+                english: "Running"
+            },
+            {
+                burmese: "Thauk ne de",
+                english: "Drinking"
+            },
+            {
+                burmese: "Eik ne de",
+                english: "Sleeping"
+            }
+        ],
+
+        bonusVocabulary: [
+            {
+                burmese: "Sa phat ne de",
+                english: "Reading"
+            },
+            {
+                burmese: "A-lote lote ne de",
+                english: "Working"
+            },
+            {
+                burmese: "Sa yay ne de",
+                english: "Writing"
+            }
         ],
 
         questions: [
 
             {
-                type: "vocabulary",
+                type: "meaning",
                 difficulty: "easy",
 
-                question: "What does “Sar ne de” mean?",
+                question:
+                    "What does “Sar ne de” mean?",
 
                 choices: [
                     "Eating",
-                    "Running",
+                    "Cooking",
                     "Sleeping",
-                    "Cooking"
+                    "Reading"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "“Sar ne de” means “Eating.”"
+                    "“Sar ne de” means that someone is eating."
             },
 
             {
-                type: "vocabulary",
+                type: "meaning",
                 difficulty: "easy",
 
-                question: "What does “Pyae ne de” mean?",
+                question:
+                    "What does “Chat ne de” mean?",
 
                 choices: [
-                    "Cooking",
                     "Running",
-                    "Sleeping",
+                    "Cooking",
+                    "Writing",
                     "Drinking"
                 ],
 
                 answer: 1,
 
                 explanation:
-                    "In these lesson notes, “Pyae ne de” means “Running.”"
-            },
-
-            {
-                type: "vocabulary",
-                difficulty: "easy",
-
-                question: "What does “Chat ne de” mean?",
-
-                choices: [
-                    "Cooking",
-                    "Eating",
-                    "Laughing",
-                    "Sleeping"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "“Chat ne de” means “Cooking.”"
-            },
-
-            {
-                type: "scenario",
-                difficulty: "medium",
-
-                question:
-                    "Your friend is having lunch. Which phrase describes the action?",
-
-                choices: [
-                    "Sar ne de",
-                    "Pyae ne de",
-                    "Chat ne de",
-                    "Ta Ta"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "Use “Sar ne de” to describe someone who is eating."
-            },
-
-            {
-                type: "scenario",
-                difficulty: "medium",
-
-                question:
-                    "Someone is exercising by running in a park. Which phrase matches the action?",
-
-                choices: [
-                    "Pyae ne de",
-                    "Sar ne de",
-                    "Chat ne de",
-                    "Mingalaba"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "In this lesson, “Pyae ne de” describes running."
-            },
-
-            {
-                type: "scenario",
-                difficulty: "medium",
-
-                question:
-                    "Someone is preparing dinner in the kitchen. Which phrase describes the action?",
-
-                choices: [
-                    "Chat ne de",
-                    "Sar ne de",
-                    "Pyae ne de",
-                    "Ta Ta"
-                ],
-
-                answer: 0,
-
-                explanation:
                     "“Chat ne de” means that someone is cooking."
             },
 
             {
-                type: "comparison",
-                difficulty: "medium",
-
-                question: "Which pair is correct?",
-
-                choices: [
-                    "Sar ne de = Eating",
-                    "Sar ne de = Running",
-                    "Sar ne de = Cooking",
-                    "Sar ne de = Sleeping"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "“Sar ne de” means “Eating.”"
-            },
-
-            {
-                type: "challenge",
-                difficulty: "hard",
+                type: "translation",
+                difficulty: "easy",
 
                 question:
-                    "At a restaurant, you see one person preparing food and another person having a meal. Which pair is correct?",
+                    "Which phrase means “Drinking”?",
 
                 choices: [
-                    "Preparing food: Chat ne de; Having a meal: Sar ne de",
-                    "Preparing food: Sar ne de; Having a meal: Chat ne de",
-                    "Preparing food: Pyae ne de; Having a meal: Chat ne de",
-                    "Preparing food: Ta Ta; Having a meal: Mingalaba"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "“Chat ne de” refers to cooking, while “Sar ne de” refers to eating."
-            }
-
-        ]
-    },
-
-
-    // ==================================================
-    // LESSON 4 — SENTENCE ORDER
-    // ==================================================
-
-    4: {
-        title: "Sentence Order",
-
-        unit: 1,
-        level: "Beginner",
-        estimatedTime: "7 minutes",
-        xp: 80,
-
-        objectives: [
-            "Recognize basic Burmese sentence order",
-            "Identify selected pronouns",
-            "Understand the basic negative pattern",
-            "Distinguish affirmative and negative structures"
-        ],
-
-        questions: [
-
-            {
-                type: "grammar",
-                difficulty: "easy",
-
-                question: "Which sentence order is commonly used in Burmese?",
-
-                choices: [
-                    "Subject + Object + Verb",
-                    "Subject + Verb + Object",
-                    "Verb + Subject + Object",
-                    "Object + Verb + Subject"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "Burmese sentences commonly follow Subject + Object + Verb order."
-            },
-
-            {
-                type: "word-order",
-                difficulty: "medium",
-
-                question:
-                    "You want to build a Burmese-style sentence using “I,” “rice,” and “eat.” Which order should you choose?",
-
-                choices: [
-                    "I + rice + eat",
-                    "I + eat + rice",
-                    "Eat + I + rice",
-                    "Rice + eat + I"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "The Burmese-style structure places the object before the verb: Subject + Object + Verb."
-            },
-
-            {
-                type: "pronoun",
-                difficulty: "easy",
-
-                question: "Which pronoun means “I” when used by a male speaker?",
-
-                choices: [
-                    "Kyun-naw",
-                    "Thu",
-                    "Thu-ma",
-                    "Min"
-                ],
-
-                answer: 0,
-
-                explanation:
-                    "“Kyun-naw” is the male form of “I” in these lesson notes."
-            },
-
-            {
-                type: "pronoun",
-                difficulty: "easy",
-
-                question: "Which pronoun means “She”?",
-
-                choices: [
-                    "Thu",
-                    "Thu-ma",
-                    "Min",
-                    "Da Ka"
+                    "Eik ne de",
+                    "Thauk ne de",
+                    "Pyae ne de",
+                    "Sa phat ne de"
                 ],
 
                 answer: 1,
 
                 explanation:
-                    "“Thu-ma” means “She.”"
+                    "“Thauk ne de” means “Drinking.”"
             },
 
             {
-                type: "grammar",
+                type: "usage",
                 difficulty: "medium",
 
                 question:
-                    "Which word is placed before a verb to begin a negative structure?",
+                    "Someone is preparing dinner. Which phrase describes the action?",
 
                 choices: [
-                    "Ma",
-                    "Ko",
-                    "Har",
-                    "Ga"
+                    "Chat ne de",
+                    "Sar ne de",
+                    "Eik ne de",
+                    "Pyae ne de"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "Add “Ma” before the verb when forming a negative sentence."
+                    "Preparing food is cooking, so “Chat ne de” is the correct answer."
             },
 
             {
-                type: "grammar",
+                type: "usage",
                 difficulty: "medium",
 
-                question: "Negative statements commonly end with which word?",
+                question:
+                    "Someone is resting in bed at night. Which phrase is correct?",
 
                 choices: [
-                    "Bue",
-                    "De",
-                    "Ne",
-                    "Bar"
+                    "Thauk ne de",
+                    "Eik ne de",
+                    "Chat ne de",
+                    "Pyae ne de"
                 ],
 
-                answer: 0,
+                answer: 1,
 
                 explanation:
-                    "In the negative pattern taught here, the sentence ends with “Bue.”"
+                    "“Eik ne de” describes someone who is sleeping."
             },
 
             {
-                type: "grammar",
+                type: "bonus-word",
                 difficulty: "medium",
 
-                question: "Which pattern correctly represents a negative verb?",
+                question:
+                    "What does “Sa phat ne de” mean?",
 
                 choices: [
-                    "Ma + verb + Bue",
-                    "Verb + Ma + De",
-                    "Bue + verb + Ma",
-                    "Verb + Bue + Ma"
+                    "Reading",
+                    "Writing",
+                    "Working",
+                    "Running"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "The basic negative pattern is “Ma + verb + Bue.”"
+                    "“Sa phat ne de” means “Reading.”"
             },
 
             {
-                type: "challenge",
+                type: "bonus-word",
+                difficulty: "medium",
+
+                question:
+                    "Which bonus phrase means “Working”?",
+
+                choices: [
+                    "Sa yay ne de",
+                    "A-lote lote ne de",
+                    "Sar ne de",
+                    "Eik ne de"
+                ],
+
+                answer: 1,
+
+                explanation:
+                    "“A-lote lote ne de” means that someone is working."
+            },
+
+            {
+                type: "review",
                 difficulty: "hard",
 
                 question:
-                    "You want to change an affirmative Burmese statement into a negative statement. What should you do?",
+                    "Which pair describes activities commonly performed with a book or notebook?",
 
                 choices: [
-                    "Place “Ma” before the verb and end with “Bue”",
-                    "Place “Bue” before the subject",
-                    "Move the verb before the subject",
-                    "Remove the object from the sentence"
+                    "Sa phat ne de and Sa yay ne de",
+                    "Chat ne de and Pyae ne de",
+                    "Eik ne de and Thauk ne de",
+                    "Sar ne de and Chat ne de"
                 ],
 
                 answer: 0,
 
                 explanation:
-                    "The negative structure taught in this lesson places “Ma” before the verb and “Bue” at the end."
+                    "Reading and writing are activities commonly performed with books or notebooks."
             }
 
         ]
